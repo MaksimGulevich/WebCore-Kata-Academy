@@ -1,0 +1,202 @@
+body {
+    width: 768px;
+    height: 88px;
+    margin: 0;
+    padding: 0;
+    font-family: "TT lakes", sans-serif;
+    font-size: 14px;
+    color: #1B1C21;
+    
+}
+
+ /* Хедер*/
+
+header {
+    width: 768px;
+    height: 88px;
+    background-color: #FFFFFF;
+}
+
+.navigation {
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+}
+
+.navigation_call {
+    margin-left:auto;
+}
+
+.navigation--position--margin {
+    margin-right: 16px;
+}
+
+.navigation--position--margin:first-child {
+    margin-left: 24px;
+}
+
+.navigation--position--margin:last-child {
+    margin-right: 24px;
+}
+
+ /* Мэин*/
+
+.container {
+    width: 768px;
+    min-height: 416px;
+    background-color: #F8F8F8;
+}
+
+h1 {
+    margin:0;
+    margin-left: 20px;
+}
+.container_title {
+    padding-top:24px;  
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+}
+
+/* Скрытые элементы мэин*/
+
+.navigation_repairico-text {
+    display: none;
+}
+
+.navigation_checkico-text {
+    display: none;
+}
+/* Список услуг и сервисов*/
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container_nav {
+    margin-bottom: 32px;
+}
+
+.container_service {
+    display: flex;
+    overflow: scroll;   
+    margin-left: 24px;
+}
+
+.container_service::-webkit-scrollbar {
+    display: none;
+}
+
+  .container_li { 
+    list-style-type: none;
+    padding: 8px 13px;
+    border: 2px solid #F8F8F8;
+    border-radius: 6px;
+    background-color: #F8F8F8;
+}
+
+.container_li:hover{ 
+    list-style-type: none;
+    padding: 8px 13px;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+}
+
+.container_link { 
+    text-decoration:none;
+    color: #7E7E82;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.container_block {
+    display: flex;
+}
+.container_info {
+    margin-left: 24px;
+    margin-right: auto;
+    max-width: 312px;
+    color: #1B1C21;
+}
+
+.container_text1 {
+    line-height: 20px;
+    margin-top: 0;
+}
+
+.container_text2 {
+    line-height: 20px;
+}
+
+.container_logo-img{
+    margin-right: 24px;
+    border-radius: 10px;
+    height: 208px;
+}
+
+
+
+ /* Styles for text box with more button */
+ .container_limited {
+    max-height: 160px;
+    overflow: hidden;
+    position: relative;
+  }
+  .container_limited.container_l-160 {
+    max-height:155px;
+  }
+  .container_read-more-checker {
+    opacity: 0;
+    position: absolute;
+  }
+
+  .container_read-more-checker:checked ~ .container_limited {
+    max-height: none;
+  }
+
+  .container_read-more-checker ~ .container_read-more-button::after {
+    content: "Читать далее";
+    margin-left: 25px;
+  }
+
+  .container_read-more-checker:checked ~ .container_read-more-button::after {
+    content: "";
+    margin-left: 25px;
+  }
+
+  .container_read-more-checker:checked ~ .container_read-more-button1::after {
+    content: "Свернуть";
+    margin-left: 25px;
+  }
+
+  .container_read-more-button {
+    margin-top:16px;
+    padding:0;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color:#F8F8F8;
+    background-image: url("../img/icon/expand.svg");
+    background-repeat: no-repeat;
+    font-family: "TT lakes", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1B1C21;
+  }
+
+  .container_read-more-button1 {
+    padding:0;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color:#F8F8F8;
+    background-image: url("../img/icon/expand1.svg");
+    background-repeat: no-repeat;
+    font-family: "TT lakes", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1B1C21;
+  }

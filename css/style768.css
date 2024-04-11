@@ -17,7 +17,7 @@ header {
 }
 
 .navigation {
-    padding: 16px 0;
+    padding: 16px 24px;
     display: flex;
     align-items: center;
 }
@@ -29,13 +29,8 @@ header {
 .navigation__item {
     margin-right: 16px;
 }
-
-.navigation__item:first-child {
-    margin-left: 24px;
-}
-
 .navigation__item:last-child {
-    margin-right: 24px;
+    margin-right: 0;
 }
 
  /* Мэин*/

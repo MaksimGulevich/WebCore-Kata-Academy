@@ -1,5 +1,5 @@
 body {
-    width: 320px;
+    min-width: 320px;
     height: 88px;
     margin: 0;
     padding: 0;
@@ -12,15 +12,27 @@ body {
  /* Хедер*/
 
 header {
-    width: 320px;
+    min-width: 320px;
     background-color: #FFFFFF;
 }
 
 .navigation {
-    padding: 5%;
+    padding: 5% 16px;
     display: flex;
-    justify-content:space-between ;
     align-items: center;
+}
+
+.navigation_divinder {
+    margin-left: auto;
+    margin-right: 16px;
+}
+
+.navigation--position--margin:first-child {
+    margin-right: 16px;
+}
+
+.navigation--position--margin:last-child {
+    margin-left: 16px;
 }
 
 .navigation_call {
@@ -38,7 +50,7 @@ header {
  /* Мэин*/
 
 .container {
-    width: 320px;
+    min-width: 320px;
     background-color: #F8F8F8;
 }
 
@@ -127,7 +139,7 @@ ul {
 
 .container_logo-img{
     margin-top: 16px;
-    width: 320px;
+    width: 100%;
 }
 
 

@@ -1,5 +1,5 @@
 body {
-    width: 768px;
+    min-width: 768px;
     height: 88px;
     margin: 0;
     padding: 0;
@@ -12,8 +12,7 @@ body {
  /* Хедер*/
 
 header {
-    width: 768px;
-    height: 88px;
+    min-width: 768px;
     background-color: #FFFFFF;
 }
 
@@ -42,8 +41,7 @@ header {
  /* Мэин*/
 
 .container {
-    width: 768px;
-    min-height: 416px;
+    min-width: 768px;
     background-color: #F8F8F8;
 }
 
@@ -114,11 +112,12 @@ ul {
 
 .container_block {
     display: flex;
+    padding: 24px;
 }
 .container_info {
-    margin-left: 24px;
     margin-right: auto;
-    max-width: 312px;
+    max-width: 50%;
+    min-width: 320px;
     color: #1B1C21;
 }
 
@@ -131,10 +130,10 @@ ul {
     line-height: 20px;
 }
 
-.container_logo-img{
-    margin-right: 24px;
+.container_logo-img {
+    width: 45vw;
+    margin-left: 48px;
     border-radius: 10px;
-    height: 208px;
 }
 
 

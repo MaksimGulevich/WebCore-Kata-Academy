@@ -25,7 +25,7 @@ header {
 
 /* Скрытые элементы хэдера*/
 
-.header {
+header {
     display: none;
 }
 
@@ -45,7 +45,7 @@ h1 {
     margin:0;
     margin-left: 33px;
 }
-.container_title {
+.container__title {
     padding-top:24px;  
     margin-bottom: 32px;
     display: flex;
@@ -54,22 +54,14 @@ h1 {
 
 /* Список услуг и сервисов*/
 
-ul {
-    margin: 0;
+.container__service {
+    margin: 0 0 16px 33px;
     padding: 0;
-}
-
-.container_nav {
-    margin-bottom: 16px;
-}
-
-.container_service {
     display: flex;  
     flex-wrap: wrap;
-    margin-left: 33px;
 }
 
-  .container_li { 
+  .container__li { 
     list-style-type: none;
     padding: 8px 13px;
     border: 2px solid #F8F8F8;
@@ -77,7 +69,7 @@ ul {
     background-color: #F8F8F8;
 }
 
-.container_li:hover{ 
+.container__li:hover{ 
     list-style-type: none;
     padding: 8px 13px;
     border: 2px solid #B8FFEC;
@@ -85,7 +77,7 @@ ul {
     background-color: #FFFFFF;
 }
 
-.container_link { 
+.container__link { 
     text-decoration:none;
     color: #7E7E82;
     font-size: 16px;
@@ -93,114 +85,92 @@ ul {
     white-space: nowrap;
 }
 
-.container_block {
+.container__block {
     display: flex;
 }
-.container_info {
+.container__info {
     margin-left: 33px;
     margin-right: auto;
     max-width: 490px;
     color: #1B1C21;
 }
 
-.container_text1 {
+.container__text {
+    font-size: 16px;
     line-height: 20px;
     margin-top: 0;
 }
 
-.container_text2 {
-    line-height: 20px;
-}
-
-.container_logo-img{
+.container__logo-img{
     margin-right:33px;
     border-radius: 10px;
     height: 307px;
 }
 
-/* Ссылки-иконки*/
+/* Ссылки-иконки в мэйне*/
 
-.navigation_repairico-link {
-    margin-left:auto;
-    margin-right: 0;
+.container__navigation{
+    margin-left: auto;
     text-decoration: none;
     color: #1B1C21;
 }
-.navigation_repairico-text {
+
+.container__figure {
     display: flex;
     align-items: center;
+    margin:0
 }
 
-.navigation_repair-img {
+.container__img {
     margin-left: 8px;
     order: 1;
 }
 
-.navigation_repair-text {
+.container__description {
     font-size: 16px;
     font-weight: 500;
 }
 
-.navigation_checkico-link {
+.container__navigation:last-child {
     margin-left: 32px;
-    text-decoration: none;
-    color: #1B1C21;
-}
-.navigation_checkico-text {
-    margin-left: 0;
-    display: flex;
-    align-items: center;
-}
-
-.navigation_check-img {
-    margin-left: 8px;
-    order: 1;
-}
-
-.navigation_check-text {
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.navigation--position--margin:last-child {
     margin-right: 24px;
 }
 
 
-   /* Styles for text box with more button */
- .container_limited {
+   /* Кнопки раскрытия текста */
+ .container__limited {
     max-height: 160px;
     overflow: hidden;
     position: relative;
   }
-  .container_limited.container_l-160 {
+  .container__limited.container__limited_l-160 {
     max-height:160px;
   }
-  .container_read-more-checker {
+  .container__read-more-checker {
     opacity: 0;
     position: absolute;
   }
 
-  .container_read-more-checker:checked ~ .container_limited {
+  .container__read-more-checker:checked ~ .container__limited {
     max-height: none;
   }
 
-  .container_read-more-checker ~ .container_read-more-button::after {
+  .container__read-more-checker ~ .container__read-more-button::after {
     content: "Читать далее";
     margin-left: 25px;
   }
 
-  .container_read-more-checker:checked ~ .container_read-more-button::after {
+  .container__read-more-checker:checked ~ .container__read-more-button::after {
     content: "";
     margin-left: 25px;
   }
 
-  .container_read-more-checker:checked ~ .container_read-more-button1::after {
+  .container__read-more-checker:checked ~ .container__read-more-button1::after {
     content: "Свернуть";
     margin-left: 25px;
   }
 
-  .container_read-more-button {
+  .container__read-more-button {
     margin-top:16px;
     padding:0;
     display: flex;
@@ -215,7 +185,7 @@ ul {
     color: #1B1C21;
   }
 
-  .container_read-more-button1 {
+  .container__read-more-button1 {
     padding:0;
     display: flex;
     align-items: center;

@@ -11,93 +11,89 @@
 </head>
 <body>
     <header>
-        
             <div class="navigation">
-                <div class="navigation__item navigation__burger-link">
-                    <a href=""><img class src="img/icon/burgermenu.svg" alt="Меню"></a>           
-                </div>
-                <div class="navigation__item navigation__profile">
+                <button class="navigation__item navigation__burger">
+                    <img  src="img/icon/burgermenu.svg" alt="Меню">
+                </button>
+                <div class="navigation__item navigation__divinder--none">
                     <img src="img/icon/divider.svg" alt="">
                 </div>
-                <div class="navigation__item navigation__groupico-link">
-                    <a href=""><img src="img/icon/Group.svg" alt=""></a>
-                </div>
-                <div class="navigation__item navigation__call">
-                    <a href=""><img  src="img/icon/call.svg" alt="Статус заказа"></a>
-                </div> 
-                <div class="navigation__item navigation__chat">
-                    <a href=""><img  src="img/icon/chat.svg" alt="Статус заказа"></a>
-                </div> 
-                <div class="navigation__item navigation__profile">
-                    <a href=""><img  src="img/icon/profile.svg" alt="Статус заказа"></a>
-                </div> 
+                <a class="navigation__item navigation__groupico-link" href="">
+                    <img src="img/icon/Group.svg" alt="">
+                </a> 
+                <button class="navigation__item navigation__call">
+                    <img  src="img/icon/call.svg" alt="Статус заказа">
+                </button> 
+                <button class="navigation__item navigation__chat">
+                    <img  src="img/icon/chat.svg" alt="Статус заказа">
+                </button> 
+                <button class="navigation__item navigation__profile">
+                    <img  src="img/icon/profile.svg" alt="Статус заказа">
+                </button> 
                 <div class="navigation__item navigation__divinder">
                     <img src="img/icon/divider.svg" alt="">
                 </div>
-
-                <div class="navigation__item navigation__repairico">
-                    <a href=""><img src="img/icon/repair.svg" alt="Оставить заявку"></a>
-                </div>
-                <div class="navigation__item navigation__checkico">
-                    <a href=""><img  src="img/icon/checkstatus.svg" alt="Статус заказа"></a>
-                </div> 
+                <button class="navigation__item navigation__repairico">
+                    <img src="img/icon/repair.svg" alt="Оставить заявку">
+                </button>
+                <button class="navigation__item navigation__checkico">
+                    <img  src="img/icon/checkstatus.svg" alt="Статус заказа">
+                </button> 
             </div>
     </header>
-    <main>
-        <div class="container">
-            <div class="container__title">
+    <main class="container">
+            <div class="title">
                 <img src="img/icon/highlight.svg" alt="">
                 <h1>Услуги и сервисы</h1>
-                <a class="container__navigation" href="">
-                    <figure class="container__figure">
-                        <div class="container__img">
+                <a class="title__navigation" href="">
+                    <figure class="title__figure">
+                        <div class="title__img">
                             <img src="img/icon/repair.svg" alt="Оставить заявку">
                         </div>
-                    <figcaption class="container__description">Оставить заявку</figcaption>
+                    <figcaption class="title__description">Оставить заявку</figcaption>
                     </figure>
                 </a>
-                <a class="container__navigation" href="">
-                    <figure class="container__figure">
-                        <div class="container__img">
+                <a class="title__navigation" href="">
+                    <figure class="title__figure">
+                        <div class="title__img">
                             <img src="img/icon/checkstatus.svg" alt="Статус ремонта">
                         </div>
-                    <figcaption class="container__description">Статус ремонта</figcaption>
+                    <figcaption class="title__description">Статус ремонта</figcaption>
                     </figure>
                 </a>
             </div>
-                <ul class="container__service">                  
-                    <li class="container__li"><a class="container__link" href="">Ремонтируемые устройства</a></li>
-                    <li class="container__li"><a class="container__link" href="">Дополнительные услуги</a></li>
-                    <li class="container__li"><a class="container__link" href="">Цены на услуги</a></li>
-                    <li class="container__li"><a class="container__link" href="">Адреса сервисных центров</a></li>
-                    <li class="container__li"><a class="container__link" href="">Специальные цены</a></li>
-                    <li class="container__li"><a class="container__link" href="">Отзывы</a></li>
+                <ul class="services">                  
+                    <li class="services__item"><a class="services__link" href="">Ремонтируемые устройства</a></li>
+                    <li class="services__item"><a class="services__link" href="">Дополнительные услуги</a></li>
+                    <li class="services__item"><a class="services__link" href="">Цены на услуги</a></li>
+                    <li class="services__item"><a class="services__link" href="">Адреса сервисных центров</a></li>
+                    <li class="services__item"><a class="services__link" href="">Специальные цены</a></li>
+                    <li class="services__item"><a class="services__link" href="">Отзывы</a></li>
                 </ul>
-            <div class="container__block">
-                <div class="container__info">
+            <div class="description">
+                <div class="description__info">
                     <!--Кнопка "Читать далее"-"Скрыть"-->
-                        <input type="checkbox" class="container__read-more-checker" id="container__read-more-checker" />
-                        <div class="container__limited container__limited_l-90 container__limited_l-160">
-                            <p class="container__text">
+                        <input type="checkbox" class="description__read-more-checker" id="description__read-more-checker" />
+                        <div class="description__limited description__limited--l-90 description__limited--l-160">
+                            <p class="description__text">
                             Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
                             </p>
-                            <p class="container__text" >
+                            <p class="description__text" >
                             Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
                             </p>
-                            <p class="container__text" >
+                            <p class="description__text" >
                                 Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
                             </p>
                           
                         </div>
-                        <label for="container__read-more-checker" class="container__read-more-button"></label>
-                        <label for="container__read-more-checker" class="container__read-more-button1"></label>
+                        <label for="description__read-more-checker" class="description__read-more-button"></label>
+                        <label for="description__read-more-checker" class="description__read-more-button1"></label>
                 </div>
-
-                    <div class="container__img">
-                        <img class="container__logo-img"  src="img/picture/Picture Copy.jpg" alt="логотип сервиса">
-                    </div>
+                <div class="description__img">
+                    <img class="description__logo-img"  src="img/picture/Picture Copy.jpg" alt="логотип сервиса">
+                </div>
             </div>
-        </div>
+        
     </main>
     <footer>
 

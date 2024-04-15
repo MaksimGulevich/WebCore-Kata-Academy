@@ -34,7 +34,7 @@ header {
     margin-right: 16px;
 }
 
-.navigation__divinder--none {
+.navigation__item_display_none {
     display: none;
 }
 
@@ -68,7 +68,6 @@ header {
 /* Заголовок title*/
 .title {
     padding-top:24px;  
-    margin-bottom: 24px;
     display: flex;
     align-items: center;
 }
@@ -76,6 +75,7 @@ header {
 h1 {
     margin:0;
     margin-left: 12px;
+    margin-bottom: 24px;
 }
 
 /* Скрытые элементы  тайтле*/
